@@ -10,7 +10,7 @@ def prime_factors(n):
         
     primeNumbers = list()
     #Defining the prime numbers until n.
-    for number in range(2,int(n**(1/2))):
+    for number in range(2,n+1):
         isPrime = True
         for divisor in range(2,number):
             if number % divisor == 0:
