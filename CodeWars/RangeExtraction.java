@@ -4,14 +4,14 @@ public class RangeExtraction{
 
         int windowFront = 0;
         int windowBack = 1;
-        int consecutive = 0;
+        //int consecutive = 0;
         while(windowFront < arr.length && windowBack < arr.length){
-            if(arr[windowFront] - arr[windowBack] == -1)
-                while()
+            if(arr[windowFront] - arr[windowBack] == -1){
 
-
+            }
+            
         }
-
+        return "";
     }
     
     public static void main(String[] args) {

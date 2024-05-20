@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class MostCommonWord {
     public String mostCommonWord(String paragraph, String[] banned) {
-        paragraph = paragraph.replace(".", " ").replace("!", " ").replace("'", " ").replace(",", " ").replace(";", " ").replace(".", " ").replace("  ", " ").replace("   ", " ");
+        paragraph = paragraph.replace(".", " ").replace("!", " ").replace("'", " ").replace(",", " ").replace(";", " ").replace(".", " ").replace("  ", " ");
 
         String[] words = paragraph.split(" "); 
         HashMap<String , Integer> counts = new HashMap<>();

@@ -20,7 +20,7 @@ public class StonesOnTheTable {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int length = sc.nextInt();
+        //int length = sc.nextInt();
         String stones = sc.next();  
 
 
