@@ -1,7 +1,26 @@
 #include <stdio.h>
 
-int main(){
+const char * result(int vectorNumber, int (*coordinates)[3]){
 
+    int x = 0, y = 0, z = 0;
+    for(int i = 0; i < vectorNumber; i++){
+        x += coordinates[i][0];
+        y += coordinates[i][1];
+        z += coordinates[i][2];
+
+    }
+
+    if(x == 0 && y == 0 && z == 0){
+        return "YES";
+    }else{
+        return "NO";
+    }
+
+}
+
+
+int main(){
+    
     int vectornum;
     scanf("%d",&vectornum);
 
@@ -15,20 +34,9 @@ int main(){
         arrays[i][2] = num3; 
     }
 
+    const char * res = result(vectornum, arrays);
 
-    int x = 0, y = 0, z = 0;
-    for(int i = 0; i < vectornum; i++){
-        x += arrays[i][0];
-        y += arrays[i][1];
-        z += arrays[i][2];
-
-    }
-
-    if(x == 0 && y == 0 && z == 0){
-        printf("YES");
-    }else{
-        printf("NO");
-    }
-
+    printf("%s\n", res);
+    
     return 0;
 }
